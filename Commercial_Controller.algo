@@ -1,0 +1,212 @@
+' ************************************************************************************'
+' *** PROGRAM:      CODEBOXX ODSSEY                                               *** '                
+' *** WEEK 1:       ALGORITHMS AND PROBLEM SOLVING                                *** '
+' *** DELIVERABLE:  COMMERCIAL CONTROLLER ALGORITHM FOR ROCKET ELEVETORS          *** '
+' *** BY:           JORGE CHAVARRIAGA                                             *** '
+' *** DATE:         14-FEB-2020                                                   *** '
+' ************************************************************************************'
+
+' ***                               0. SYSTEM INITIALIZATION                       ***'
+SEQUENCE initElevatorSystem USING systemReady
+    CALL systemReady()
+    SET elevatorStatus TO idle
+    SET doorOpened TO FALSE
+    SET numberFloors TO 60
+    SET numbrerBasements TO 6
+    SET numberColumns TO 4
+    SET numberElevators TO 12
+    SET elevatorColumn TO 3
+    SET elevatorStart TO 1
+    SET column1Floors = 1 AND B1 TO B6 'Serving to basements 1 to 6 and groundFloor 1
+    SET column2Floors = 1 TO 20 'Serving to floors 1 to 20
+    SET column3Floors = 1 AND 21 to 40 'Serving to floors 21 to 40 And floor 1
+    SET column4Floors = 1 AND 41 to 60 'Serving to floors 41 to 60 And floor 7: 20 floors served'
+END SEQUENCE
+
+' ***                               1. SYSTEM READY                                ***'
+SEQUENCE systemReady USING energy
+    IF engergy IS TRUE THEN
+        SET batteryStatus TO on
+    ELSE IF energy IS FALSE THEN
+        SET batteryStatus TO off
+    END IF
+END SEQUENCE
+
+' ***                               2. EXTERNAL BUTTON                             ***'
+SEQUENCE externalButton USING requestDirection AND requestFloor
+    SET externalButtonStatus EQUAL on
+    CALL findColumn() WITH requestFloor RETURN
+    CALL findElevator() WITH requestDirection AND requestFloor RETURN elevator
+    CALL showElevator() WITH columnSelected AND elevator
+    CALL addToElevatorQueue() WITH elevator AND requestFloor
+    CALL moveElevator() WITH elevator
+    SET externalButtonStatus EQUAL off
+END SEQUENCE
+
+' ***                               3. FIND COLUMN                                 ***'
+SEQUENCE findColumn USING floor AND direction AND columnFloors
+    FOR EACH column IN battery
+        CASE 1: requestedFloor = 1 AND requestedFloor IS IN column1Floors
+            SET columnSelected EQUAL TO column1Floors
+            RETURN columnSelected 
+        CASE 2: requestedFloor >= 1 AND requestedFloor IS IN column2Floors
+            SET columnSelected EQUAL TO column2Floors
+            RETURN columnSelected
+        CASE 3: requestedFloor >= 1 AND requestedFloor IS IN column3Floors
+            SET columnSelected EQUAL TO column3Floors
+            RETURN columnSelected
+        CASE 4: requestedFloor >= 1 AND requestedFloor IS IN column4Floors
+            SET columnSelected EQUAL TO column4Floors
+            RETURN columnSelected
+        ENDCASE
+    END FOR
+END SEQUENCE
+
+' ***                               4. FIND ELEVATOR                              ***'
+SEQUENCE findElevator USING requestDirection AND requestFloor
+    FOR EACH column in culumns
+        IF columnId IS chooseColumn
+            FOR EACH elevator in elevators   
+                SET elevator correctWay TO FALSE 
+            END FOR
+            FOR EACH elevator in elevators 
+                IF elevator Status IS idle THEN      
+                    RETURN elevator
+                ELSE IF elevatorDirection IS up AND RequestDirection IS up AND requestFloor > elevator currentFloor THEN            
+                    SET elevator correctWay TO TRUE            
+                ELSE elevatorDirection IS down AND requestDirection IS down AND requestFloor < elevator currentFloor THEN    
+                    SET elevator correctWay TO TRUE        
+                END IF
+            END FOR
+            SET newGap EQUAL TO 0  
+            SET elevatorId EQUAL TO 0 
+            FOR EACH elevator in elevators           
+                IF elevator correctWay IS TRUE THEN  
+                    SET gap IS CALCULATE ABSOLUTE(elevator CurrentFloor - Request Floor) 
+                IF gap IS NOT 0 THEN 
+                    SET newGAP EQUAL TO CALCULATE ABSOLUTE(gap - newGap)
+                    IF gap < newGap THEN 
+                        SET elevatorId EQUAL TO elevator ID 
+                    END IF    
+                END IF    
+            END FOR
+            FOR EACH elevator in elevators            
+                IF elevatorId = elevator ID THEN
+                    RETURN elevator
+                END IF  
+            END FOR
+            FOR EACH elevator in elevators            
+                        RETURN elevator
+            END FOR
+        END IF 
+    END FOR
+END SEQUENCE
+
+' ***                               5. SHOW COLUMN/ELEVATOR TO USER  SORT          ***'
+SEQUENCE showElevator USING columnSelected AND elevator
+    DISPLAY columnSelected AND elevator IN digitalScreen
+END SEQUENCE
+
+' ***                               6. PUSH ELEVATOR TO QUEUE AND SORT             ***'
+SEQUENCE addToElevatorQueue USING elevator AND requestFloor
+    PUSH requestFloor TO elevatorQueue
+    IF elevatorDirection IS up THEN
+        SORT up elevatorQueue
+    IF elevatorDirection IS down THEN
+        SORT down elevatorQueue 
+    ENDIF
+END SEQUENCE
+
+' ***                               7. MOVE ELEVATOR                               ***'
+SEQUENCE moveElevator USING elevator
+    IF elevator doorOpened IS TRUE THEN 
+      CALL closeDoor() WITH elevator
+    END IF
+    FOR EACH request IN elevatorQueue
+    IF request > elevator currentFloor THEN
+      CALL moveUp() WITH elevator
+    END IF
+    IF firstRequest < elevator currentFloor THEN
+      CALL moveDown() WITH Elevator
+    END IF
+END SEQUENCE
+
+' ***                               8. CLOSE DOOR                                  ***'
+SEQUENCE closeDoor
+    CALL overWeight RETURN 
+    SET closeDoor EQUAL TRUE
+    IF doorSensor IS on OR overWeight > 800 kg THEN
+        CALL openDoor() 
+    ELSE IF doorSensor IS off AND overWeight <800 kg THEN
+        SET closeDoor EQUAL TRUE
+    END IF
+END SEQUENCE
+
+' ***                               9. CHECK WEIGHT                                ***'
+SEQUENCE overWeight USING weightSensor AND maximumWeight
+    FOR EACH elevator IN column
+    SET maximumWeight TO 1800 kg THEN
+    READ weightSsensor THEN
+    IF weightSensor >= 1800 kg THEN
+        SET overWeightLight TO on THEN
+        CALL openDoor()
+    ELSE IF weightSensor < 800 kg
+        SET overWeightLight TO off
+    END IF
+    END FOR
+END SEQUENCE
+
+' ***                               10. OPEN DOOR                                  ***'
+SEQUENCE openDoor
+    SET doorOpened EQUAL TRUE
+    IF doorOpended EQUAL TRUE THEN
+        SET timer to 8 seconds THEN
+        CALL closeDoor()    
+    END IF
+END SEQUENCE
+
+' ***                               11. MOVE UP                                    ***'
+SEQUENCE moveUp USING  elevator
+    SET elevatorStatus TO moving
+    SET elevatorDirection TO up
+    GET firstRequest OF elevatorQueue 
+    WHILE elevator currentFloor < firstRequest
+        SET elevator currentfloor EQUAL (elevator currentfloor + 1)
+        IF firstRequest IS EQUAL currentFloor THEN
+            SET elevatorStatus TO stop
+            CALL openDoor() WITH elevator
+            POP the firstRequest OF elevatorQueue
+        END IF
+    END WHILE
+    IF elevatorQueue IS EMPTY THEN
+        CALL initialPosition()
+        SET status TO idle
+    END IF
+END SEQUENCE
+
+' ***                               12. MOVE DOWN                                  ***'
+SEQUENCE moveDown USING elevator
+    SET elevatorStatus TO moving
+    SET elevatorDirection TO Down
+    GET firstRequest OF elevatorQueue 
+    WHILE elevator currentFloor > firstrequest
+        SET elevator currentfloor EQUAL (elevator currentfloor - 1)
+        IF firstrequest IS EQUAL currentFloor THEN
+            SET elevatorStatus TO stop
+            CALL openDoor() WITH elevator
+            POP the firstRequest OF elevatorQueue
+        END IF
+    END WHILE
+    IF elevatorQueue IS EMPTY THEN
+        CALL initialPosition()
+        SET elevatorStatus TO idle
+    END IF
+END SEQUENCE
+
+' ***                               13. BUTTON TO LOWER                            ***'
+SEQUENCE buttonToLower USING requestFloor
+    CALL findElevator() WITH requestFloor
+    CALL addToElevatorQueue() WITH requestFloor
+    CALL moveElevator() WITH elevator
+END SEQUENCE
+
