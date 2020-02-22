@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Residential Controller</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" >
+		<div class="jumbotron" style="background: url(logo.png) no-repeat center left; padding: 1rem 2rem;">
+			<h1 style="text-align: center;">Residential Controller</h1>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-sm-1"></div>
+    	<div class="col-sm-10" style="background-color:lavender;"><b><h3>The program to develop is a controller set up in:</h3></b></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-3">
+			<p></p>
+			<ul>
+				<li>10 storey building</li>
+				<li>2 elevator cages</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<p><strong>This controller is capable of supporting two main events:</strong></p>
+			<ol>
+				<li>George presses a call button to request an elevator, the main controller selects an available cage and it is sended to the person based on two parameters provided by the input " press button"</li>
+				<ul>
+					<li>The floor where the person is (0 to 10)</li>
+					<li>The direction in wich he wants to go (up or down)</li>
+				</ul>
+				<li>George enters an elevator, press to which floor he wanna go, and the elevator moves to the requested floor. The inputs are:</li>
+				<ul>
+					<li>The elevator used</li>
+					<li>The requested floor</li>
+				</ul>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<p><strong>The developed controller must be provided in a single file and must include both methods:</strong></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<ol>
+				<li>Method 1:</li>
+				<ul>
+					<li><u>INPUT:</u> RequestElevator (The floor where George is (requestedFloor), direction to go (Up/Down))</li>
+					<li><u>RETURN:</u> The choosen elevator an move it (to the floor where George makes the call)</li>
+				</ul>
+				<li>Method 2:</li>
+				<ul>
+					<li><u>INPUT:</u> RequestFloor (Elevator (The elevator choosen), RequestedFloor (Which floor George wanna go))</li>
+					<li><u>RETURN:</u> Move the elevator to the floor that George request</li>
+				</ul>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8 btn-group btn-group-justified">
+			<button type="button" class="btn btn-danger btn-lg disabled">Select an option and open the developer console (Ctrl + Shift + I)</button>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12"><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10 btn-group btn-group-justified">
+			<button onclick="buttonScenario1()" type="button" class="btn btn-success">Scenario 1</button>
+			<button onclick="buttonScenario2()" type="button" class="btn btn-success">Scenario 2</button>
+			<button onclick="buttonScenario3()" type="button" class="btn btn-success">Scenario 3</button>
+			<button onclick="buttonScenario4()" type="button" class="btn btn-success">Make Your Own Scenario</button>
+			<button onclick="clearConsole()" type="button" class="btn btn-success">Clear Console</button>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>	
+		
+    <script src="Residential_Controller.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>	
+</html>
