@@ -1,0 +1,37 @@
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.exe
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.deps.json
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.runtimeconfig.json
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.runtimeconfig.dev.json
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.dll
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\bin\Debug\netcoreapp3.1\CommercialController.pdb
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\obj\Debug\netcoreapp3.1\CommercialController.csprojAssemblyReference.cache
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\obj\Debug\netcoreapp3.1\CommercialController.AssemblyInfoInputs.cache
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\obj\Debug\netcoreapp3.1\CommercialController.AssemblyInfo.cs
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\obj\Debug\netcoreapp3.1\CommercialController.dll
+C:\Users\jorge\CodeBoxx\MyStuff\CodeBoxx\TESTING\4ok\CommercialController\obj\Debug\netcoreapp3.1\CommercialController.pdb
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.exe
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.deps.json
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.runtimeconfig.json
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.runtimeconfig.dev.json
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\CommercialController.pdb
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.csprojAssemblyReference.cache
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.AssemblyInfoInputs.cache
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.AssemblyInfo.cs
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.pdb
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Apollo13.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Apollo13.DataAccessLayer.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Apollo13.Mapper.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Apollo13.PerformanceMonitor.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Apollo13.Threadworker.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QPick.Classlogger.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\Qpick.Enums.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QPick.Methodlogger.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QPick.StocklocationMask.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QPick.XML.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QuickPick.One.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\QuickPickOneCLR.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.dll
+C:\Users\jorge\CodeBoxx\2 - ODYSSEY PROGRAM\Week3\CommercialController_C#\obj\Debug\netcoreapp3.1\CommercialController.csproj.CopyComplete

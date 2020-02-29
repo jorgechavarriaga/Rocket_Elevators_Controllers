@@ -1,0 +1,629 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Apollo13/3.4.17344": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.4.12"
+        },
+        "compile": {
+          "lib/net45/Apollo13.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Apollo13.dll": {}
+        }
+      },
+      "Apollo13.DataAccessLayer/3.4.18001": {
+        "type": "package",
+        "dependencies": {
+          "Apollo13.PerformanceMonitor": "3.4.18001.1"
+        },
+        "compile": {
+          "lib/net45/Apollo13.DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Apollo13.DataAccessLayer.dll": {}
+        }
+      },
+      "Apollo13.Mapper/3.4.17344": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.4.12"
+        },
+        "compile": {
+          "lib/net45/Apollo13.Mapper.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Apollo13.Mapper.dll": {}
+        }
+      },
+      "Apollo13.PerformanceMonitor/3.4.18001.2": {
+        "type": "package",
+        "dependencies": {
+          "Apollo13.Threadworker": "3.4.18001.2"
+        },
+        "compile": {
+          "lib/net45/Apollo13.PerformanceMonitor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Apollo13.PerformanceMonitor.dll": {}
+        }
+      },
+      "Apollo13.Threadworker/3.4.18001.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Tpl.Dataflow": "4.5.24",
+          "NLog": "4.4.12"
+        },
+        "compile": {
+          "lib/net45/Apollo13.Threadworker.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Apollo13.Threadworker.dll": {}
+        }
+      },
+      "Microsoft.Tpl.Dataflow/4.5.24": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "NLog/4.4.12": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "QPick.Classlogger/3.4.17343": {
+        "type": "package",
+        "dependencies": {
+          "Apollo13.Mapper": "3.3.17170",
+          "Apollo13.Threadworker": "3.3.17170.1"
+        },
+        "compile": {
+          "lib/net45/QPick.Classlogger.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QPick.Classlogger.dll": {}
+        }
+      },
+      "Qpick.Enums/3.4.18037.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Qpick.Enums.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Qpick.Enums.dll": {}
+        }
+      },
+      "QPick.Methodlogger/3.3.17164": {
+        "type": "package",
+        "compile": {
+          "lib/net45/QPick.Methodlogger.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QPick.Methodlogger.dll": {}
+        }
+      },
+      "QPick.StocklocationMask/3.3.17170": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.4.10"
+        },
+        "compile": {
+          "lib/net45/QPick.StocklocationMask.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QPick.StocklocationMask.dll": {}
+        }
+      },
+      "QPick.XML/3.3.17170": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.4.9"
+        },
+        "compile": {
+          "lib/net45/QPick.XML.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QPick.XML.dll": {}
+        }
+      },
+      "QuickPick.One/3.4.18143.6": {
+        "type": "package",
+        "dependencies": {
+          "Apollo13": "3.4.17344",
+          "Apollo13.DataAccessLayer": "3.4.18001",
+          "Apollo13.Mapper": "3.4.17344",
+          "Apollo13.PerformanceMonitor": "3.4.18001.2",
+          "Apollo13.Threadworker": "3.4.18001.2",
+          "NLog": "4.4.12",
+          "QPick.Classlogger": "3.4.17343",
+          "QPick.Methodlogger": "3.3.17164",
+          "QPick.StocklocationMask": "3.3.17170",
+          "QPick.XML": "3.3.17170",
+          "Qpick.Enums": "3.4.18037.1",
+          "QuickPickOneCLR": "3.4.18037.2",
+          "System.Linq.Dynamic": "1.0.7"
+        },
+        "compile": {
+          "lib/net45/QuickPick.One.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QuickPick.One.dll": {}
+        }
+      },
+      "QuickPickOneCLR/3.4.18037.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/QuickPickOneCLR.dll": {}
+        },
+        "runtime": {
+          "lib/net45/QuickPickOneCLR.dll": {}
+        }
+      },
+      "System.Linq.Dynamic/1.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Linq.Dynamic.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Linq.Dynamic.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Apollo13/3.4.17344": {
+      "sha512": "Ihxuw8r9Fj6o/g4rhCeuvWQ5CLMgFXmzO34pB8HcXgRrINQG4A76wNLJ0epQMyhGrwyQfXmeA02gMc3b1busQQ==",
+      "type": "package",
+      "path": "apollo13/3.4.17344",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apollo13.3.4.17344.nupkg.sha512",
+        "apollo13.nuspec",
+        "lib/net45/Apollo13.dll"
+      ]
+    },
+    "Apollo13.DataAccessLayer/3.4.18001": {
+      "sha512": "cyzTK+Cm6nJtkP0+4Yb2wyrXU1TeWV9GgOGw6UW63ad2Wvm24dFWdIdOb7G6cM0M69jRFRZZizehBu62o9ogOg==",
+      "type": "package",
+      "path": "apollo13.dataaccesslayer/3.4.18001",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Tools/install.ps1",
+        "apollo13.dataaccesslayer.3.4.18001.nupkg.sha512",
+        "apollo13.dataaccesslayer.nuspec",
+        "content/Sql/2012/Microsoft.Data.Tools.Schema.Sql.dll",
+        "content/Sql/2012/Microsoft.Data.Tools.Utilities.dll",
+        "content/Sql/2012/Microsoft.SqlServer.Dac.dll",
+        "content/Sql/2014/Microsoft.Data.Tools.Schema.Sql.dll",
+        "content/Sql/2014/Microsoft.Data.Tools.Utilities.dll",
+        "content/Sql/2014/Microsoft.SqlServer.Dac.dll",
+        "content/Sql/2016/Microsoft.Data.Tools.Schema.Sql.dll",
+        "content/Sql/2016/Microsoft.Data.Tools.Utilities.dll",
+        "content/Sql/2016/Microsoft.SqlServer.Dac.dll",
+        "lib/net45/Apollo13.DataAccessLayer.dll"
+      ]
+    },
+    "Apollo13.Mapper/3.4.17344": {
+      "sha512": "Mw7Pm4pf8gm6PPCT8jFL04zuxLfC8jyZMatb5tDeKKTB7dPxW3dLPofS9YaqS+LHYVF64fL4xb4kmHYBrdBW0Q==",
+      "type": "package",
+      "path": "apollo13.mapper/3.4.17344",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apollo13.mapper.3.4.17344.nupkg.sha512",
+        "apollo13.mapper.nuspec",
+        "lib/net45/Apollo13.Mapper.dll"
+      ]
+    },
+    "Apollo13.PerformanceMonitor/3.4.18001.2": {
+      "sha512": "DcP97ukDNO0yl2QvA9uMunZxL2k+NnFeaaLArwIVfT0UJr3YSMM/kGiCdTkLVHzEe/ctgNKGb4qvJzjzhVnF2Q==",
+      "type": "package",
+      "path": "apollo13.performancemonitor/3.4.18001.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apollo13.performancemonitor.3.4.18001.2.nupkg.sha512",
+        "apollo13.performancemonitor.nuspec",
+        "lib/net45/Apollo13.PerformanceMonitor.dll"
+      ]
+    },
+    "Apollo13.Threadworker/3.4.18001.2": {
+      "sha512": "tjmFr4d8PTgC42LLKPBpyMaXqP8hlimsdBSuM5mCSSe9eDhicD8hgozO2xxAAC0IlxrgyJ+clGzoPOfEqcARtQ==",
+      "type": "package",
+      "path": "apollo13.threadworker/3.4.18001.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apollo13.threadworker.3.4.18001.2.nupkg.sha512",
+        "apollo13.threadworker.nuspec",
+        "lib/net45/Apollo13.Threadworker.dll"
+      ]
+    },
+    "Microsoft.Tpl.Dataflow/4.5.24": {
+      "sha512": "6BE4Vu74+dkv5AkJd+UxW1sFMepMZOVlUoMZDUKqhc4Bf7pe7yySzCj6QrowUZbCqcDPwOiQsAgz3nXiLQSyMw==",
+      "type": "package",
+      "path": "microsoft.tpl.dataflow/4.5.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Dataflow.dll",
+        "lib/portable-net45+win8+wp8+wpa81/system.threading.tasks.dataflow.xml",
+        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll",
+        "lib/portable-net45+win8+wpa81/system.threading.tasks.dataflow.xml",
+        "microsoft.tpl.dataflow.4.5.24.nupkg.sha512",
+        "microsoft.tpl.dataflow.nuspec"
+      ]
+    },
+    "NLog/4.4.12": {
+      "sha512": "fODew3BFT2XhAuqhGo2ZYT9OJE0ciGEBfvKXOmAAvaDsP/3ROIf083p8QUnmwKKw4jCkVW06ObX6gn/eFi2Skg==",
+      "type": "package",
+      "path": "nlog/4.4.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/NLog.dll",
+        "lib/MonoAndroid10/NLog.xml",
+        "lib/Xamarin.iOS10/NLog.dll",
+        "lib/Xamarin.iOS10/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40/NLog.dll",
+        "lib/net40/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "nlog.4.4.12.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "QPick.Classlogger/3.4.17343": {
+      "sha512": "I537L1lXXNT8he6fjNoWVy7DcypR2Sly5vUCxLWsoJhGL6u2x868GSK7cz+5GrJ3P1Dn8ngY/1hKuUmuQIrX4g==",
+      "type": "package",
+      "path": "qpick.classlogger/3.4.17343",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NuGet.exe",
+        "content/nuget.txt",
+        "lib/net45/QPick.Classlogger.dll",
+        "qpick.classlogger.3.4.17343.nupkg.sha512",
+        "qpick.classlogger.nuspec"
+      ]
+    },
+    "Qpick.Enums/3.4.18037.1": {
+      "sha512": "+mnixmYCKJvx9HoSGbTvZlkHzghnG/98+0av2CIdy4vZ5SZ39GT0y/bXy2DpUoUadA8nOAA/5FjK0GwsdIIISQ==",
+      "type": "package",
+      "path": "qpick.enums/3.4.18037.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/nuget.txt",
+        "lib/net45/Qpick.Enums.dll",
+        "qpick.enums.3.4.18037.1.nupkg.sha512",
+        "qpick.enums.nuspec"
+      ]
+    },
+    "QPick.Methodlogger/3.3.17164": {
+      "sha512": "qxpRrL2ZVH1L+WyeK0KLKeJwWI8aneZzZC/lAxYwF1DAlFICxlYXfw9ajVsRTysT5Bg0AQwCj170rxGMURW+Yg==",
+      "type": "package",
+      "path": "qpick.methodlogger/3.3.17164",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NuGet.exe",
+        "content/nuget.txt",
+        "lib/net45/QPick.Methodlogger.dll",
+        "qpick.methodlogger.3.3.17164.nupkg.sha512",
+        "qpick.methodlogger.nuspec"
+      ]
+    },
+    "QPick.StocklocationMask/3.3.17170": {
+      "sha512": "+tixKjSL9U4fn60Jnh9cvWVyruS2U6UVIsq4cRx+cImumTfDOf8jOkHcuk2U+v68DArn88bhEexTSUInjnidSg==",
+      "type": "package",
+      "path": "qpick.stocklocationmask/3.3.17170",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NuGet.exe",
+        "content/nuget.txt",
+        "lib/net45/QPick.StocklocationMask.dll",
+        "qpick.stocklocationmask.3.3.17170.nupkg.sha512",
+        "qpick.stocklocationmask.nuspec"
+      ]
+    },
+    "QPick.XML/3.3.17170": {
+      "sha512": "4bymWtvnsqn782JCJYpcGIbav3K/Spya4X7OIvsVl9g4cyApdJCOR6yhzwaopecYW96QA4jF5s2vrtgX95WpEw==",
+      "type": "package",
+      "path": "qpick.xml/3.3.17170",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NuGet.exe",
+        "content/nuget.txt",
+        "lib/net45/QPick.XML.dll",
+        "qpick.xml.3.3.17170.nupkg.sha512",
+        "qpick.xml.nuspec"
+      ]
+    },
+    "QuickPick.One/3.4.18143.6": {
+      "sha512": "7fuj+FJtCH3qixWaQbqdgasQ96L0jb9DcrJjBB67bLDoy3PYrEAYWFX+c14DNWGfCKYY8TKQIFmQj198t9dxpA==",
+      "type": "package",
+      "path": "quickpick.one/3.4.18143.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NuGet.exe",
+        "lib/net45/QuickPick.One.dll",
+        "quickpick.one.3.4.18143.6.nupkg.sha512",
+        "quickpick.one.nuspec"
+      ]
+    },
+    "QuickPickOneCLR/3.4.18037.2": {
+      "sha512": "jqo7E/HViKSj/6tDW099xD8VqxgUxwsggAN6kmQh3IXKJJKBBNjPx2FI/vsxI+PZaMf47OYDLqx/wI4RhZ2JIA==",
+      "type": "package",
+      "path": "quickpickoneclr/3.4.18037.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Tools/install.ps1",
+        "content/Database.dacpac",
+        "content/master.dacpac",
+        "content/msdb.dacpac",
+        "lib/net45/QuickPickOneCLR.dll",
+        "quickpickoneclr.3.4.18037.2.nupkg.sha512",
+        "quickpickoneclr.nuspec"
+      ]
+    },
+    "System.Linq.Dynamic/1.0.7": {
+      "sha512": "BxEYab1SCgaqElLv57DrfPyi3ksK1Pbk5eXfwkXRZOdlC4aFT03QRkPEbYFBnFPnxhoLlc/Rg2b8vL0ffYSYWA==",
+      "type": "package",
+      "path": "system.linq.dynamic/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.exe",
+        "lib/net40/System.Linq.Dynamic.dll",
+        "system.linq.dynamic.1.0.7.nupkg.sha512",
+        "system.linq.dynamic.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "QuickPick.One >= 3.4.18143.6"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jorge\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\jorge\\CodeBoxx\\2 - ODYSSEY PROGRAM\\Week3\\CommercialController_C#\\CommercialController.csproj",
+      "projectName": "CommercialController",
+      "projectPath": "C:\\Users\\jorge\\CodeBoxx\\2 - ODYSSEY PROGRAM\\Week3\\CommercialController_C#\\CommercialController.csproj",
+      "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jorge\\CodeBoxx\\2 - ODYSSEY PROGRAM\\Week3\\CommercialController_C#\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "QuickPick.One": {
+            "target": "Package",
+            "version": "[3.4.18143.6, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Apollo13 3.4.17344' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Apollo13",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Apollo13.DataAccessLayer 3.4.18001' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Apollo13.DataAccessLayer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Apollo13.Mapper 3.4.17344' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Apollo13.Mapper",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Apollo13.PerformanceMonitor 3.4.18001.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Apollo13.PerformanceMonitor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Apollo13.Threadworker 3.4.18001.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Apollo13.Threadworker",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Tpl.Dataflow 4.5.24' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Tpl.Dataflow",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NLog 4.4.12' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QPick.Classlogger 3.4.17343' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QPick.Classlogger",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Qpick.Enums 3.4.18037.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Qpick.Enums",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QPick.Methodlogger 3.3.17164' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QPick.Methodlogger",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QPick.StocklocationMask 3.3.17170' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QPick.StocklocationMask",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QPick.XML 3.3.17170' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QPick.XML",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QuickPick.One 3.4.18143.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QuickPick.One",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'QuickPickOneCLR 3.4.18037.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "QuickPickOneCLR",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Linq.Dynamic 1.0.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Linq.Dynamic",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
